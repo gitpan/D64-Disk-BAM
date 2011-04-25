@@ -1,0 +1,8 @@
+lib/D64/Disk/BAM.pm
+t/01-diskname.t
+t/02-diskid.t
+t/03-trackbam.t
+Changes
+Makefile.PL
+MANIFEST
+README
