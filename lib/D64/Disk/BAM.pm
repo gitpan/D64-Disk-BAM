@@ -66,7 +66,7 @@ use bytes;
 use strict;
 use warnings;
 
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 use Carp qw/carp croak/;
 use Text::Convert::PETSCII qw/:convert/;
@@ -164,10 +164,10 @@ sub _setup_data {
     my $sector_data = shift;
     if ($sector_data) {
         return 0 unless $self->_validate_bam_data($sector_data);
-    }
-    for (my $i = 0; $i < length ($sector_data); $i++) {
-        my $byte = substr $sector_data, $i, 1;
-        $self->[$i] = ord $byte;
+        for (my $i = 0; $i < length ($sector_data); $i++) {
+            my $byte = substr $sector_data, $i, 1;
+            $self->[$i] = ord $byte;
+        }
     }
     return 1;
 }
@@ -893,11 +893,11 @@ Pawel Krol, E<lt>pawelkrol@cpan.orgE<gt>.
 
 =head1 VERSION
 
-Version 0.01 (2011-04-25)
+Version 0.02 (2013-01-15)
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2011 by Pawel Krol <pawelkrol@cpan.org>.
+Copyright 2011, 2013 by Pawel Krol <pawelkrol@cpan.org>.
 
 This program is free software; you can redistribute it and/or modify it under the same terms as Perl itself.
 

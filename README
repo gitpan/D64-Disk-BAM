@@ -1,9 +1,9 @@
-D64::Disk::BAM 0.01
+D64::Disk::BAM 0.02
 ===================
 
 D64::Disk::BAM provides the complete set of methods essential for accessing,
 managing and manipulating the contents of the BAM area of the Commodore disk
-images (note that only D64 format is supported).
+images (please note that currently only D64 format is supported).
 
 INSTALLATION
 
@@ -16,7 +16,7 @@ To install this module type the following:
 
 COPYRIGHT AND LICENCE
 
-Copyright 2011 by Pawel Krol <pawelkrol@cpan.org>.
+Copyright 2011, 2013 by Pawel Krol <pawelkrol@cpan.org>.
 
 This program is free software; you can redistribute it and/or modify it under
 the same terms as Perl itself.
